@@ -18,6 +18,7 @@ import streamlit as st
 def driver(symbol):
 
   data = Data_Scrapping.scrap_data_from_yahoo_finance(symbol)
+
   st.subheader("Data Scrapped Successfully")
   st.write(data.head(3))
   st.write(data.tail(3))

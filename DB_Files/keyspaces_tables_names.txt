@@ -10,3 +10,4 @@ demo.LINDIA
 demo.TY
 demo.KNIFTY
 demo.AMOTORS
+demo.AJFINSV
