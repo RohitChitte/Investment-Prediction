@@ -291,3 +291,92 @@ Backtrace:
 	BaseThreadInitThunk [0x00007FFCF80555A0+16]
 	RtlUserThreadStart [0x00007FFCF99C485B+43]
 
+2023-02-19/ 15:17:49	Entered function scrap_data_from_yahoo_finance
+2023-02-19/ 15:17:49	converted ticker name and opened browswer fro scrapping using webdriver
+2023-02-19/ 15:18:06	Clicked on Maybe Later button of banner on webpage
+2023-02-19/ 15:18:07	clicked on calender element 
+2023-02-19/ 15:18:07	clicked on 5 Year element 
+2023-02-19/ 15:18:07	clicked Apply button element 
+2023-02-19/ 15:18:30	Scrolling Done till end of page
+2023-02-19/ 15:18:30	Scrapped table from webpage
+2023-02-19/ 15:18:30	Entered Mechanism to save and move CSV files from folders
+2023-02-19/ 15:18:30	Saved File and data frame returned by the function ends
+2023-02-19/ 15:18:32	Entered try block of testing_data function
+2023-02-19/ 15:18:32	Reading data, loading scaler pickle file and scaling done
+2023-02-19/ 15:18:32	Transformed array returned successfully
+2023-02-19/ 15:18:32	entered try block of prediction function
+2023-02-19/ 15:18:33	Model file and scaler file loaded succesfully
+2023-02-19/ 15:18:36	returned predicted prices succesfully exiting prediction function
+2023-02-19/ 15:18:40	inside init of CassandraDBManagement Class object created successufully
+2023-02-19/ 15:18:40	inside try block of upload_data_to_DB function
+2023-02-19/ 15:18:40	inside try block of is_Keyspace_presetn function
+2023-02-19/ 15:18:40	inside try bock of get_Keyspace function
+2023-02-19/ 15:18:40	inside try block of create_table function
+2023-02-19/ 15:18:42	Entered Try block of log_keyspaces_table_names function
+2023-02-19/ 15:19:50	New table named demo.AMOTORS created and values inserted in cloud DB
+2023-02-19/ 15:19:50	upload_data_to_DB function executed successfully and data fetch from DB returned
+2023-02-19/ 15:19:50	Total Execution time of project : 120.68469834327698
+2023-02-19/ 15:42:33	Entered function scrap_data_from_yahoo_finance
+2023-02-19/ 15:42:33	converted ticker name and opened browswer fro scrapping using webdriver
+2023-02-19/ 15:42:33	Entered Exception block of yahoo scraping function __init__() got an unexpected keyword argument 'Options'
+2023-02-19/ 15:42:46	Entered function scrap_data_from_yahoo_finance
+2023-02-19/ 15:42:46	converted ticker name and opened browswer fro scrapping using webdriver
+2023-02-19/ 15:42:46	Entered Exception block of yahoo scraping function __init__() got an unexpected keyword argument 'Options'
+2023-02-19/ 15:43:57	Entered function scrap_data_from_yahoo_finance
+2023-02-19/ 15:43:57	converted ticker name and opened browswer fro scrapping using webdriver
+2023-02-19/ 15:43:57	Entered Exception block of yahoo scraping function __init__() got an unexpected keyword argument 'Options'
+2023-02-19/ 15:44:35	Entered function scrap_data_from_yahoo_finance
+2023-02-19/ 15:44:35	converted ticker name and opened browswer fro scrapping using webdriver
+2023-02-19/ 15:44:39	Entered Exception block of yahoo scraping function Message: session not created: No matching capabilities found
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7C17291D2+14306]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7C16B0992+842866]
+	(No symbol) [0x00007FF7C1361D90]
+	(No symbol) [0x00007FF7C13CC2F6]
+	(No symbol) [0x00007FF7C13CB642]
+	(No symbol) [0x00007FF7C13CDB7D]
+	(No symbol) [0x00007FF7C13CD3BA]
+	(No symbol) [0x00007FF7C13C5B03]
+	(No symbol) [0x00007FF7C13973B8]
+	(No symbol) [0x00007FF7C139638E]
+	(No symbol) [0x00007FF7C1397AE4]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7C15FFE18+119032]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7C15ED4D6+42934]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7C15F06EC+55756]
+	(No symbol) [0x00007FF7C1467923]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7C16B844A+874282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7C16BD544+895012]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7C16BD69C+895356]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7C16C67BE+932510]
+	BaseThreadInitThunk [0x00007FFCF80555A0+16]
+	RtlUserThreadStart [0x00007FFCF99C485B+43]
+
+2023-02-19/ 15:44:55	Entered function scrap_data_from_yahoo_finance
+2023-02-19/ 15:44:55	converted ticker name and opened browswer fro scrapping using webdriver
+2023-02-19/ 15:44:58	Entered Exception block of yahoo scraping function Message: session not created: No matching capabilities found
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7C17291D2+14306]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7C16B0992+842866]
+	(No symbol) [0x00007FF7C1361D90]
+	(No symbol) [0x00007FF7C13CC2F6]
+	(No symbol) [0x00007FF7C13CB642]
+	(No symbol) [0x00007FF7C13CDB7D]
+	(No symbol) [0x00007FF7C13CD3BA]
+	(No symbol) [0x00007FF7C13C5B03]
+	(No symbol) [0x00007FF7C13973B8]
+	(No symbol) [0x00007FF7C139638E]
+	(No symbol) [0x00007FF7C1397AE4]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7C15FFE18+119032]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7C15ED4D6+42934]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7C15F06EC+55756]
+	(No symbol) [0x00007FF7C1467923]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7C16B844A+874282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7C16BD544+895012]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7C16BD69C+895356]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7C16C67BE+932510]
+	BaseThreadInitThunk [0x00007FFCF80555A0+16]
+	RtlUserThreadStart [0x00007FFCF99C485B+43]
+
+2023-02-19/ 15:48:28	Total Execution time of project : 74.94191408157349
