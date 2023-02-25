@@ -11,3 +11,7 @@ demo.TY
 demo.KNIFTY
 demo.AMOTORS
 demo.AJFINSV
+demo.FILMS
+demo.BALAMINES
+demo.TATAMOTORS
+demo.BANKNIFTY

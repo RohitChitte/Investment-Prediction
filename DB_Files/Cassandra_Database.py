@@ -101,7 +101,9 @@ class CassandraDBManagement:
             (os.chdir(os.getcwd()[:63]))
             path = (os.getcwd()[:63] + "\\" + f"Data\Scraped Data\{os.listdir('Data/Scraped Data')[0]}")
             data = pd.read_csv(path)
-            table_name = path[81:-4]
+            (os.chdir(os.getcwd()[:63]))
+            table_name = (os.listdir("Data/Scraped Data")[0][:-4])
+
 
 
             if self.is_keyspace_present(keyspace):
@@ -127,14 +129,14 @@ class CassandraDBManagement:
         except Exception as e :
 
             return e
-    def fetch_data_from_table_in_DB(self,keyspace):
+    def fetch_data_from_table_in_DB(self,keyspace,table_name):
         try:
             log.log("Entered Try block of fetch_data_from_table_in_DB")
             self.session.execute(f"USE {keyspace} ;")
 
-            (os.chdir(os.getcwd()[:63]))
-            path = (os.getcwd()[:63] + "\\" + f"Data\Scraped Data\{os.listdir('Data/Scraped Data')[0]}")
-            table_name = path[81:-4]
+            # (os.chdir(os.getcwd()[:63]))
+            (os.chdir(os.getcwd()[:59]))
+            table_name = (os.listdir("Data/Scraped Data")[0][:-4])
             log.log(f"data from remote table named {keyspace}.{table_name} retrieved successfully")
             return self.session.execute(f"select * from {keyspace}.{table_name};").current_rows
         except Exception as e:
@@ -159,8 +161,8 @@ class CassandraDBManagement:
 if __name__ == "__main__":
 
     obj = CassandraDBManagement()
-    obj.upload_data_to_DB('demo')
-    print(obj.fetch_data_from_table_in_DB('demo'))
+    # obj.upload_data_to_DB('demo')
+    print((obj.fetch_data_from_table_in_DB('demo','BANKNIFTY')))
 
 
 

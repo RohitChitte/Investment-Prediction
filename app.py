@@ -61,6 +61,7 @@ def Db():
 
 
 start = time.time()
+
 t1 = threading.Thread(target=Db)
 
 st.title("Stock Trend Prediction")
@@ -68,6 +69,10 @@ symbol = st.text_input("Enter Stock Ticker").upper()
 # symbol = input("Enter stock Ticker : ").upper()
 
 if(symbol!=""):
+  log = App_Logger()
+  log.log("----------------------------------------------------------------------------------")
+  log.log("------------Execution Started----------------")
+
   tickers = pd.read_csv(r"Data/Static Data/EQUITY.csv")
 
   if ((symbol!='NIFTY') and (symbol!="BANKNIFTY")):
@@ -80,6 +85,8 @@ if(symbol!=""):
   st.write("DB Operations in progress.....")
   t1.join()
   end = time.time()
-  log = App_Logger()
-  log.log(f"Total Execution time of project : {end - start}")
-  st.write("Total Exceution Time : ", end - start)
+  execution_time = end-start
+
+  log.log(f"Total Execution time of project : {execution_time}")
+  log.close()
+  st.write("Total Exceution Time : ", execution_time)
